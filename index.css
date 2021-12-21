@@ -6,6 +6,10 @@
     /* border: 1px solid rgb(238, 227, 227);  */
 }
 
+body { 
+    height: 100%;
+    width: 100%;
+}
 body>div{ 
     width: 50%;
     height: 50%;
@@ -22,6 +26,7 @@ body>div{
     margin:3px;
     cursor: pointer;   
 }
+
 .container{ 
     display: grid;
     width: 320px;
@@ -134,8 +139,22 @@ body>div{
 }
 
 
+/* *******footer ********* */
+footer>a{ 
+
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    color: white;
+    color:rgb(201, 198, 198)
+}
 
 
 
 
+.tecla:active{ 
+   opacity: 0.5;
+   color: rgb(245, 61, 61);
+   border:3px solid white;
+}
 
