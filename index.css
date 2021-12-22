@@ -3,6 +3,7 @@
     padding: 0;
     background-color: black;
     box-sizing: border-box;
+    outline: none;
     /* border: 1px solid rgb(238, 227, 227);  */
 }
 
@@ -13,9 +14,53 @@ body {
 body>div{ 
     width: 50%;
     height: 50%;
-    margin: 20% auto;
+    margin: auto auto;
 }
 
+@media (max-width: 580px){
+    body>div{ 
+        width: 50%;
+        height: 50%;
+        margin: 40% 12%;
+    }
+}
+
+@media (max-width: 540px){
+    body>div{ 
+        width: 30%;
+        height: 40%;
+        margin: 20% 17%;
+    }
+}
+@media (max-width: 500px){
+    body>div{ 
+        width: 30%;
+        height: 40%;
+        margin: 20% 15%;
+    }
+}
+
+@media (max-width: 400px){
+    body>div{ 
+        width: 30%;
+        height: 40%;
+        margin: 20% 7%;
+    }
+}
+@media (max-width: 350px){
+    body>div{ 
+        width: 30%;
+        height: 40%;
+        margin: 10% 3%;
+    }
+}
+@media (max-width: 300px){
+    body>div{ 
+        width: 30%;
+        height: 40%;
+        margin: 10% 1%;
+    }
+}
 .tecla { 
     color: white;
     border: 2.2px solid rgb(7, 4, 0);
@@ -25,6 +70,7 @@ body>div{
     font-size: 1.2rem;
     margin:3px;
     cursor: pointer;   
+    outline: none;
 }
 
 .container{ 
@@ -33,9 +79,10 @@ body>div{
     height:430px; 
     border:0.1px solid rgba(77, 76, 74, 0.938);
     background: rgb(10, 10, 10);
-    margin:  0 auto;
+    margin: 20% auto;
     grid-template-columns: 1fr 1fr 1fr  1fr;
     grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr ; 
+    outline: none;
 }
 
 /*********Display *********/
@@ -59,6 +106,7 @@ body>div{
     border-radius:70%;
     grid-column: 4/5;
     justify-content: center;
+    outline: none;    
  }
 .color--colunadireita>div{ 
     background: rgb(253, 136, 3);
@@ -66,6 +114,8 @@ body>div{
     width:25px;
     height: 25px;   
     border-radius: 70%;
+    outline: none;    
+
 }
 .color--linhacima{ 
     background: rgb(201, 198, 198);
@@ -88,6 +138,7 @@ body>div{
     height: 60px;
     margin:5px;
     border-radius:70%;
+    outline: black;
 }
 .color1>div{ 
     background: rgb(49, 29, 29);
@@ -95,6 +146,7 @@ body>div{
     border-radius:70%;
     width:25px;
     height:25px;
+    outline:none;
 }
 
 /*************  number zero ************/
@@ -115,7 +167,7 @@ body>div{
     border-top-right-radius: 25%;
     border-top-left-radius: 25%;
     border-bottom-right-radius: 22%;
-    border-bottom-left-radius: 22%;
+    border-bottom-left-radius: 22%;    outline: none;
     
 }
 
@@ -156,5 +208,9 @@ footer>a{
    opacity: 0.5;
    color: rgb(245, 61, 61);
    border:3px solid white;
+   outline: none;
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
+
 
