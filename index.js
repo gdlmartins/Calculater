@@ -19,7 +19,9 @@ const operator = operador => {
 
     calculo = [...calculo , entradaClick ];
     entradaClick = [];
-    console.log( [...calculo, operador] );
+    // console.log( [...calculo, operador] );
+    // display.value = eval([...calculo].join(''));
+    // calculo = eval([...calculo].join(''));
     return calculo = [...calculo, operador] ;
     
     //    return calculo = [...calculo, operador]
@@ -37,7 +39,7 @@ const resultFunction = () => {
     calculo = [eval(calculo)];
     display.value =calculo;
     console.log(calculo);
-    return calculo =['0'] ;
+    return calculo =[] ;
 
 }
 
@@ -55,7 +57,7 @@ const operatorSpeciais =(operadorSpecial) => {
 }
 
 const reset = () =>  {
-  display.value = calculo =['0'];
+  display.value = calculo =[];
   return calculo  ;
 }
 
