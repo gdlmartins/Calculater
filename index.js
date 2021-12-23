@@ -37,7 +37,7 @@ const resultFunction = () => {
     calculo = [eval(calculo)];
     display.value =calculo;
     console.log(calculo);
-    return calculo =[0] ;
+    return calculo =['0'] ;
 
 }
 
@@ -55,7 +55,7 @@ const operatorSpeciais =(operadorSpecial) => {
 }
 
 const reset = () =>  {
-  display.value = calculo =[0];
+  display.value = calculo =['0'];
   return calculo  ;
 }
 
