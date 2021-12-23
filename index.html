@@ -14,39 +14,53 @@
          <div>
 
             <div class="container">
-                    <div class="display">0</div>
+                    <input disabled class="display"/>
         
-                    <button class="tecla color--linhacima"><div>AC</div></button>
-                    <button class="tecla color--linhacima"><div>&#177</div></button>
-                    <button class="tecla color--linhacima"><div>%</div></button>
-        
-                    <button class="tecla color--colunadireita"><div>&#247</div></button>
-                    <button class="tecla color--colunadireita"><div>&#215</div></button>
-                    <button class="tecla color--colunadireita"><div>&#8722<div></button>
-                    <button class="tecla color--colunadireita"><div>&#43<div></button>
-                    <button class="tecla color--colunadireita"><div>&#61<div></button>                
+                    <button onclick={reset()} class="tecla color--linhacima"><div>AC</div></button>
+
+                    <!-- +/- -->
+                    <button onclick="operatorSpeciais('* -1')"  class="tecla color--linhacima"><div>&#177</div></button>
+
+                    <!-- % -->
+                    <button onclick="operatorSpeciais('/100')" class="tecla color--linhacima"><div>%</div></button>
+
+                    <!--  /  -->
+                    <button onclick="operator('/')" class="tecla color--colunadireita"><div>&#247</div></button>
+
+                    <!-- x -->
+                    <button onclick="operator('*')" class="tecla color--colunadireita"><div>&#215</div></button>
+
+                    <!-- "-"  -->
+                    <button onclick="operator('-')" class="tecla color--colunadireita"><div>&#8722<div></button>
+
+                        <!-- "+""  -->
+                    <button onclick="operator('+')" class="tecla color--colunadireita"><div>&#43<div></button>
+
+                    <!--   "=""  -->
+                    <button onclick={resultFunction()} class="tecla color--colunadireita"><div>&#61<div></button>                
             
 
-                    <button class="tecla color1 second--line"><div>7</div></button>
-                    <button class="tecla color1 second--line"><div>8</div></button>
-                    <button class="tecla color1 second--line"><div>9</div></button>
+                    <button onclick={enteringAKey(event)} class="tecla color1 second--line"><div>7</div></button>
+                    <button onclick={enteringAKey(event)} class="tecla color1 second--line"><div>8</div></button>
+                    <button onclick={enteringAKey(event)} class="tecla color1 second--line"><div>9</div></button>
 
             
-                    <button class="tecla color1 third--line"><div>4</div></button>
-                    <button class="tecla color1 third--line"><div>5</div></button>
-                    <button class="tecla color1 third--line"><div>6</div></button>
+                    <button onclick={enteringAKey(event)} class="tecla color1 third--line"><div>4</div></button>
+                    <button onclick={enteringAKey(event)} class="tecla color1 third--line"><div>5</div></button>
+                    <button onclick={enteringAKey(event)} class="tecla color1 third--line"><div>6</div></button>
 
             
-                    <button class="tecla color1 fourth--line"><div>1</div></button>
-                    <button class="tecla color1 fourth--line"><div>2</div></button>
-                    <button class="tecla color1 fourth--line"><div>3</div></button> 
+                    <button onclick={enteringAKey(event)} class="tecla color1 fourth--line"><div>1</div></button>
+                    <button onclick={enteringAKey(event)} class="tecla color1 fourth--line"><div>2</div></button>
+                    <button onclick={enteringAKey(event)} class="tecla color1 fourth--line"><div>3</div></button> 
             
 
-                    <button class=" tecla color1 numero--zero"><div>0</div></button>
-                    <button class="tecla color1 last--line" ><div>.</div></button>
+                    <button onclick={enteringAKey(event)} class=" tecla color1 numero--zero"><div>0</div></button>
+                    <button onclick={enteringAKey(event)} class="tecla color1 last--line" ><div>.</div></button>
                  </div>
         
         </div>
     <footer><a href="https://github.com/gdlmartins" target="_blank">by gdlmartins</a></footer>
+    <script src="./index.js"> </script>
 </body>
 </html>
