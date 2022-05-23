@@ -8,58 +8,79 @@ display.value=0;
 
 const enteringAKey =(e)=>{ 
   entradaClick = [...entradaClick, display.value = e.target.innerText];
-  console.log(" Line10 entering", entradaClick);
-  display.value = entradaClick = entradaClick.join('');
-  
-
+  display.value = entradaClick =entradaClick.join('');
 };
 
-
 const operator = operador => {
-
-    calculo = [...calculo , entradaClick ];
-    entradaClick = [];
-    // console.log( [...calculo, operador] );
-    // display.value = eval([...calculo].join(''));
-    // calculo = eval([...calculo].join(''));
-    return calculo = [...calculo, operador] ;
-    
-    //    return calculo = [...calculo, operador]
-    
+  entradaClick = [...entradaClick, operador ]
+  display.value = entradaClick =entradaClick.join('');
 } ; 
 
-
 const resultFunction = () => { 
-    calculo = [...calculo , entradaClick ];
-    entradaClick = [];
-    console.log('32', calculo);
-    console.log('calculo spread operator',...calculo)
-    calculo = [...calculo].join('')
-    console.log('36', calculo);
-    calculo = [eval(calculo)];
-    display.value =calculo;
-    console.log(calculo);
-    return calculo =[] ;
-
+  entradaClick =  [eval(entradaClick)]
+ display.value = entradaClick;
 }
 
-
-const operatorSpeciais =(operadorSpecial) => { 
-
-  calculo = [...calculo , entradaClick ];
-  entradaClick = [];
-  console.log('49', [...calculo, operadorSpecial] );
-  calculo = [...calculo, operadorSpecial].join('');
-  calculo = eval(calculo);
-  display.value = calculo;
-  return calculo = [calculo] ;
+const operatorSpeciais =operadorSpecial => { 
+  if(entradaClick.length >0  && entradaClick){ 
+    console.log("entrou click")
+    entradaClick = [...entradaClick, operadorSpecial ].join('')
+    entradaClick= [eval(entradaClick)]
+    console.log(operadorSpecial)
+    console.log(entradaClick)
+    display.value =entradaClick
+  }else {
+    console.log("nao entrou click")
+    display.value= "Error NAN"
+  }
 
 }
 
 const reset = () =>  {
-  display.value = calculo =[];
-  return calculo  ;
+  entradaClick = [];
+  display.value=0; 
 }
+
+
+    // calculo = [...calculo , entradaClick ];
+    // entradaClick = [];
+    // // console.log( [...calculo, operador] );
+    // // display.value = eval([...calculo].join(''));
+    // // calculo = eval([...calculo].join(''));
+    // return calculo = [...calculo, operador] ;
+    
+    // //    return calculo = [...calculo, operador]
+
+
+//     calculo = [...calculo , entradaClick ];
+//     entradaClick = [];
+//     console.log('32', calculo);
+//     console.log('calculo spread operator',...calculo)
+//     calculo = [...calculo].join('')
+//     console.log('36', calculo);
+//     calculo = [eval(calculo)];
+//     display.value =calculo;
+    // console.log(calculo);
+//     return calculo =[] ;
+
+
+
+
+//   calculo = [...calculo , entradaClick ];
+//   entradaClick = [];
+//   console.log('49', [...calculo, operadorSpecial] );
+//   calculo = [...calculo, operadorSpecial].join('');
+//   calculo = eval(calculo);
+//   display.value = calculo;
+//   return calculo = [calculo] ;
+
+
+
+
+
+
+
+//   display.value = calculo =[];
 
 
 
