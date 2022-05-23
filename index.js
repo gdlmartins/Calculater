@@ -6,17 +6,22 @@ display.value = 0;
 
 const enteringAKey = (e) => {
   const input = e.target.innerText;
+  
   if (input === ".") {
+    entradaClick = entradaClick.split("")
     if (entradaClick.find((item) => item === ".")) {
+      console.log(".", entradaClick)
       input = "";
     }
+    entradaClick = entradaClick.join("");
   }
-
-  entradaClick = [...entradaClick, (display.value = input)];
+  entradaClick = [...entradaClick,  input];
+  console.log("16", entradaClick)
   display.value = entradaClick = entradaClick.join("");
 };
 const operator = (operador) => {
   entradaClick = [...entradaClick, operador];
+  console.log("19", entradaClick)
   display.value = entradaClick = entradaClick.join("");
 };
 const resultFunction = () => {
